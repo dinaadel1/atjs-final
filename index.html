@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+</head>
+<body>
+
+<div id="app">
+    <div class="topnav">
+        <router-link class="active" to="/">Go to Home</router-link>
+        <br /><router-link class="pokedex" to="/pokedex">Go to Pokedex</router-link>
+        <br /><router-link class="calculator" to="/calculator">Go to Calculator</router-link>
+        <br /><router-link class="guesser" to="/guesser">Go to Guesser</router-link>
+        <br /><router-link class="war" to="/war">Go to War</router-link>
+
+    </div>
+    <router-view />
+
+
+
+</div>
+<script type="module" src="/src/main.js"></script>
+<style>
+
+
+    .topnav {
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+
+    .topnav a {
+        float: left;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav{
+        display: inline-flex;
+        margin-top: 20px;
+        margin-bottom: 100px;
+
+    }
+    router-view{
+        margin-left: 200px;
+    }
+
+</style>
+</body>
+</html>
